@@ -1,10 +1,7 @@
 [
   "hubot-auth",
   "hubot-circleci",
-  "hubot-codinglove",
-  "hubot-devops-reactions",
   "hubot-dogeme",
-  "hubot-google-images",
   "hubot-google-hangouts",
   "hubot-help",
   "hubot-pugme",
