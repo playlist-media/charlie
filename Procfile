@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n charlie
+web: bin/hubot -a slack -n jarvis
