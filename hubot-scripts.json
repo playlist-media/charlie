@@ -1,1 +1,15 @@
-["redis-brain.coffee"]
+[
+  "advice.coffee",
+  "alot.coffee",
+  "applause.coffee",
+  "ascii.coffee",
+  "aws.coffee",
+  "aww.coffee",
+  "botsnack.coffee",
+  "encourage.coffee",
+  "excuse.coffee",
+  "poem.coffee",
+  "rubygems.coffee",
+  "xkcd.coffee",
+  "zen.coffee"
+]

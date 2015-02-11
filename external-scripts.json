@@ -1,8 +1,15 @@
 [
   "hubot-auth",
   "hubot-circleci",
+  "hubot-diagnostics",
   "hubot-dogeme",
+  "hubot-google-images",
   "hubot-help",
+  "hubot-maps",
   "hubot-pugme",
+  "hubot-redis-brain",
+  "hubot-rules",
+  "hubot-shipit",
+  "hubot-standup",
   "hubot-youtube"
 ]
