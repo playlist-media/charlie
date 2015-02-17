@@ -22,6 +22,7 @@
     "hubot-youtube": "^0.1.2",
     "jsdom": "^3.1.1",
     "moment": "^2.9.0",
+    "moustached-hubot": "git://github.com/travis-ci/moustached-hubot.git",
     "underscore": "^1.7.0"
   },
   "engines": {
