@@ -8,6 +8,7 @@
 #   hubot <stack> [<environment>] status - show status for the specified stack (and optional environment)
 #   hubot <stack> [<environment>] maintenance (on|off) - set maintenance mode status for the specified stack (and optional environment)
 #   hubot deploy <stack> [<branch>] [to <environment>] - deploy stack with an optional branch to an optional environment (default: master, production)
+#   hubot restart <stack> [<environment>] - restart the specified stack / environment
 #
 # Author:
 #   jacobwgillespie
@@ -81,7 +82,7 @@ module.exports = (robot) ->
         else
           msg.send "Erm! This doesn't look right: #{data}"
 
-  robot.respond /([^\s]+)( ([^\s]+))? restart$/, (msg) ->
+  robot.respond /^restart ([^\s]+)( ([^\s]+))?$/, (msg) ->
     stack = msg.match[1]
     environment = msg.match[3] || 'production'
 
@@ -151,7 +152,7 @@ module.exports = (robot) ->
 
         created_at = new Date(Date.now())
         room = msg.message.room
-        data = JSON.stringify(git_ref: branch)
+        data = JSON.stringify(stack_id: stack_id, git_ref: branch)
 
         robot.http("https://app.cloud66.com/api/3/stacks/#{stack_id}/deployments")
           .header('Authorization', "Bearer #{api_key}")
@@ -174,4 +175,3 @@ module.exports = (robot) ->
 
       else
         msg.send "Canceling..."
-
